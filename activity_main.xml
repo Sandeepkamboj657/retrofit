@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#CDB6B6"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:padding="50dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/hubco_logo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:id="@+id/edUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="  User name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold|italic"
+            android:fontFamily="serif-monospace"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/ic_baseline_perm_contact_calendar_24"
+            android:textSize="22sp"
+            android:inputType="textPersonName"
+            />
+
+        <EditText
+            android:id="@+id/edPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="  Password"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold|italic"
+            android:fontFamily="serif-monospace"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_marginRight="20dp"
+
+            android:drawableLeft="@drawable/ic_baseline_power_input_24"
+            android:textSize="22sp"
+
+            android:drawableRight="@drawable/ic_baseline_remove_red_eye_24"
+            android:inputType="textPassword"
+            />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonshape"
+            android:text="Sign in"
+            android:textStyle="bold"
+
+            android:textAllCaps="false"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textColor="#EA1F1F"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:layout_gravity="right"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="200dp"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Powered by"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hubco.in ®"
+                android:layout_marginLeft="5dp"
+                android:textColor="#EA1F1F"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
